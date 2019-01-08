@@ -36,3 +36,11 @@ header {
 .nav-main {
     font-size: 1.2rem;
 }
+
+.borderless {
+    border: 0px;
+} 
+
+.form-font {
+    font-size: 1.3;
+}
