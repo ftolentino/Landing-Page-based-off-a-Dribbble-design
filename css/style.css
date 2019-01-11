@@ -1,14 +1,8 @@
     /* background: url(https://source.unsplash.com/vciNkl75o7Q/2028X1520); 
     
     */
-body {
-    overflow-x: hidden;
-}
-header {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+main {
+    display: block;
 }
 
 .bg-image {
@@ -18,8 +12,9 @@ header {
     background-position: 100%;
 }
 
-.pt-main {
-    padding-top: 12rem;
+header {
+    position: absolute;  
+    width: 100%;
 }
 
 .h1-main {
