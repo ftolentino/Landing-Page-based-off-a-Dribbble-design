@@ -1,45 +1,24 @@
-    /* background: url(https://source.unsplash.com/vciNkl75o7Q/2028X1520); 
-    
-    */
-main {
-    display: block;
-}
 
-.bg-image {
+.flex-container {
     background: url(https://source.unsplash.com/FBbRad1EWjw/2917×3798);
-    height: 100vh;
     background-size: cover;
-    background-position: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
 }
 
-header {
-    position: absolute;  
-    width: 100%;
-}
-
-.h1-main {
-    font-size: 10rem;
-    letter-spacing: -.6rem;
-    word-spacing: -.5rem;
-}
-
-.h3-main {
-    font-size: 2rem;
-    word-spacing: .2rem;
-}
-
-.nav-main {
-    font-size: 1.2rem;
-}
-
-.borderless {
-    border: 0px;
-} 
-
-.form-font {
-    font-size: 1.3;
-}
-
-.non-bold {
-    font-weight: 100; 
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
 }
