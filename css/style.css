@@ -1,24 +1,36 @@
-
-.flex-container {
+body {
     background: url(https://source.unsplash.com/FBbRad1EWjw/2917×3798);
     background-size: cover;
     height: 100vh;
-    display: flex;
-    justify-content: center; 
-    flex-direction: column;
-    align-items: center;
-    align-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.flex-container {  
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;   
 }
 
-.flex-item {
-    background: tomato;
-    padding: 5px;
-    width: 60px;
-    height: 50px;
-    margin: 5px;
-    line-height: 40px;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    text-align: center;
+.flex-container {
+    justify-content: space-between;
+    max-height: 800px;
+    width: 75%;
+}
+
+.hero-container > h1 {
+    font-size: 12rem;
+    word-spacing: -1rem;
+    letter-spacing: -.5rem;
+}
+
+.hero-container > h3 {
+    font-size: 2rem;
+}
+
+.bg-opacity-grey {
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
+.font-thin {
+    font-weight: 100;
 }
