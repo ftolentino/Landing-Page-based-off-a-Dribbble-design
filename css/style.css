@@ -34,3 +34,23 @@ body {
 .font-thin {
     font-weight: 100;
 }
+
+.btn-goplaces {
+    border-radius: 0px;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.form-font {
+    font-weight: 600;
+}
+
+.form-border {
+    border-bottom: 2px solid #fff;
+}
+
+.form-border:hover {
+    border-bottom: 2px solid rgb(0, 201, 201);
+}
+
+/* rgb(0, 201, 201) */
