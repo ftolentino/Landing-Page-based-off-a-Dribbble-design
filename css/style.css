@@ -44,13 +44,20 @@ body {
 .form-font {
     font-weight: 600;
 }
+.icon-aqua:hover {
+    color: #64d1e5;
+}
 
 .form-border {
     border-bottom: 2px solid #fff;
 }
 
 .form-border:hover {
-    border-bottom: 2px solid rgb(0, 201, 201);
+    border-bottom: 2px solid #64d1e5;
+}
+
+.borderless {
+    border: 0px;
 }
 
 /* rgb(0, 201, 201) */
