@@ -37,8 +37,9 @@ body {
 
 .btn-goplaces {
     border-radius: 0px;
-    padding: 10px 10px;
-    margin: 0;
+    padding: 10px 60px;
+    font-size: 1.3rem;
+    background-color: #fabe25;
 }
 
 .form-font {
@@ -60,4 +61,11 @@ body {
     border: 0px;
 }
 
-/* rgb(0, 201, 201) */
+.fold-border {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.74);
+    padding-bottom: 30px;
+}
+
+.fold-border:hover {
+    border-bottom: 2px solid #fabe25;
+}
