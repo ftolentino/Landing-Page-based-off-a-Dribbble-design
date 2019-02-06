@@ -1,5 +1,6 @@
 body {
-    background: url(https://source.unsplash.com/FBbRad1EWjw/2917×3798);
+    /* background: url(https://source.unsplash.com/FBbRad1EWjw/2917×3798); */
+    background-color: cadetblue;
     background-size: cover;
     height: 100vh;
     margin: 0;
