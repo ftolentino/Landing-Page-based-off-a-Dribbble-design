@@ -1,28 +1,16 @@
-// add an event 'onclick' to console log the selected value from the select list options.
-function getTravelers() {
-    var selectedValue = document.getElementById("travelers").value;
-    console.log(selectedValue);
+
+function getElementId (element) {
+   console.log(element.value); 
 }
 
+const objForm = {
+   id1: travelers.value,  
+   id2: travelFrom.value,
+   id3: travelTo.value,
+   id4: startDate.value,
+   id5: endDate.value,
+};
 
-function travelFrom() {
-    var selectedValue = document.getElementById("travel-from").value;
-    console.log(selectedValue);
+function submitForm () {
+   console.log(objForm.id1, objForm.id2, objForm.id3, objForm.id4, objForm.id5);
 }
-
-function travelTo() {
-    var selectedValue = document.getElementById("travel-to").value;
-    console.log(selectedValue);
-}
-
-function startDate() {
-    var selectedValue = document.getElementById("start-date").value;
-    console.log(selectedValue);
-}
-
-function endDate() {
-    var selectedValue = document.getElementById("end-date").value;
-    console.log(selectedValue);
-}
-
-

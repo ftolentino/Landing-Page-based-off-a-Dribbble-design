@@ -61,7 +61,7 @@
             <div class="form-container bg-opacity-grey pt-2 pb-4">
                 <div class="pl-3">
                     <form class="form-inline">
-                        <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travelers" onclick="getTravelers();">
+                        <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travelers" onchange="getElementId(this);">
                             <option selected="">Travelers</option>
                             <option value="1 Traveler">1 Traveler</option>
                             <option value="2 Travelers">2 Travelers</option>
@@ -74,7 +74,7 @@
                     <div class="pl-4">
                         <form class="form-inline form-border icon-aqua">
                             <i class="fas fa-map-marker-alt"></i>
-                            <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travel-from" onclick="travelFrom();">
+                            <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travelFrom" onchange="getElementId(this);">
                                 <option selected="">From</option>
                                 <option value="Seattle">Seattle</option>
                                 <option value="Portland">Portland</option>
@@ -86,7 +86,7 @@
                     <div>
                         <form class="form-inline form-border icon-aqua ">
                             <i class="far fa-dot-circle"></i>
-                            <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travel-to" onclick="travelTo();">
+                            <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travelTo" onchange="getElementId(this);">
                                 <option selected="">To Where</option>
                                 <option value="Iceland">Iceland</option>
                                 <option value="Bora Bora">Bora Bora</option>
@@ -95,38 +95,20 @@
                             </select>
                         </form>
                     </div>
-                    <div>
-                        <form class="form-inline form-border icon-aqua">
+                    
+                        <div class="form-border icon-aqua">
                             <i class="fas fa-calendar-day"></i>
-                            <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="start-date" onclick="startDate();">
-                                <option selected="">Start Date</option>
-                                <option value="Mon 9/10">Mon 9/10</option>
-                                <option value="Tue 9/11">Tue 9/11</option>
-                                <option value="Wed 9/12">Wed 9/12</option>
-                                <option value="Thur 9/13">Thur 9/13</option>
-                                <option value="Fri 9/14">Fri 9/14</option>
-                                <option value="Sat 9/15">Sat 9/15</option>
-                                <option value="Sun 9/16">Sun 9/16</option>
-                            </select>
-                        </form>
-                    </div>
-                    <div>
-                        <form class="form-inline form-border icon-aqua">
-                            <i class="fas fa-calendar-day">
-                                <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="end-date" onclick="endDate();">
-                                    <option selected="">End Date</option>
-                                    <option value="Mon 9/17">Mon 9/17</option>
-                                    <option value="Tue 9/18">Tue 9/18</option>
-                                    <option value="Wed 9/19">Wed 9/19</option>
-                                    <option value="Thur 9/20">Thur 9/20</option>
-                                    <option value="Fri 9/21">Fri 9/21</option>
-                                    <option value="Sat 9/22">Sat 9/22</option>
-                                    <option value="Sun 9/23">Sun 9/23</option>
-                                </select>
-                            </i>
-                        </form>
-                    </div>
-                    <button type="button" class="btn btn-warning btn-goplaces text-white form-font">Let's Go Places</button>
+                            <input class="bg-transparent borderless form-font" id="startDate" type="date" value="2019-09-10" onchange="getElementId(this);">
+                            </input>
+                        </div>
+                    
+                        <div class="form-border icon-aqua">
+                            <i class="fas fa-calendar-day"></i>
+                            <input class="bg-transparent borderless form-font" id="endDate" type="date" value="2019-09-17" onchange="getElementId(this);">
+                            </input>
+                        </div>
+
+                    <button type="submit" class="btn btn-warning btn-goplaces text-white form-font" onclick="submitForm(this);">Let's Go Places</button>
                 </div>
             </div>
             <!-- article column -->
