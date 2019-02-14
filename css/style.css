@@ -37,7 +37,7 @@ body {
 }
 
 .hero-container > h3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 .bg-opacity-grey {
@@ -50,7 +50,7 @@ body {
 
 .btn-goplaces {
     border-radius: 0px;
-    padding: 10px 60px;
+    padding: 10px 50px;
     font-size: 1.3rem;
     background-color: #fabe25;
 }
@@ -83,19 +83,11 @@ body {
     border-bottom: 2px solid #fabe25;
 }
 
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-    .hero-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero-container > h1 {
-        font-size: 25vw;
-    }
-    .hero-container > h3 {
-        font-size: 5vw;
-    }
-}
+@media (max-width: 768px) {}
+
 
