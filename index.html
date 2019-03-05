@@ -64,12 +64,16 @@
                     <div class="row">
                         <div class="col">
                             <form class="form-inline">
-                                <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travelers" onchange="getElementId(this);">
-                                    <option selected="">Travelers</option>
-                                    <option value="1 Traveler">1 Traveler</option>
-                                    <option value="2 Travelers">2 Travelers</option>
-                                    <option value="3 Travelers">3 Travelers</option>
-                                    <option value="4 Travelers">4 Travelers</option>
+                                <select 
+                                    class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" 
+                                    id="travelers" name="traveler"
+                                    onchange="saveValue(this);"
+                                >
+                                    <option value="">Travelers</option>
+                                    <option value="1">1 Traveler</option>
+                                    <option value="2">2 Travelers</option>
+                                    <option value="3">3 Travelers</option>
+                                    <option value="4">4 Travelers</option>
                                 </select>
                             </form>
                         </div>
@@ -77,8 +81,12 @@
                             <div class="col d-flex align-items-center form-border mx-2">
                                 <form class="form-inline icon-aqua">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travelFrom" onchange="getElementId(this);">
-                                        <option selected="">From</option>
+                                    <select 
+                                        class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" 
+                                        id="travelFrom" 
+                                        onchange="saveValue(this);"
+                                    >
+                                        <option value="">From</option>
                                         <option value="Seattle">Seattle</option>
                                         <option value="Portland">Portland</option>
                                         <option value="San Francisco">San Francisco</option>
@@ -89,8 +97,8 @@
                             <div class="col d-flex align-items-center form-border mx-2">
                                 <form class="form-inline icon-aqua ">
                                     <i class="far fa-dot-circle"></i>
-                                    <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travelTo" onchange="getElementId(this);">
-                                        <option selected="">To Where</option>
+                                    <select class="custom-select my-1 mr-sm-2 bg-transparent borderless form-font" id="travelTo" onchange="saveValue(this);">
+                                        <option value="">To Where</option>
                                         <option value="Iceland">Iceland</option>
                                         <option value="Bora Bora">Bora Bora</option>
                                         <option value="Hawaii">Hawaii</option>
@@ -100,14 +108,14 @@
                             </div>
                             <div class="col d-flex align-items-center form-border icon-aqua mx-2">
                                 <i class="fas fa-calendar-day"></i>
-                                <input id="startDate" type="date" value="2019-09-10" onchange="getElementId(this);" class="bg-transparent borderless form-font">
+                                <input id="startDate" type="date" value="" onchange="saveValue(this);" class="bg-transparent borderless form-font">
                             </div>                    
                             <div class="col d-flex align-items-center form-border icon-aqua mx-2">
                                 <i class="fas fa-calendar-day"></i>
-                                <input class="bg-transparent borderless form-font" id="endDate" type="date" value="2019-09-17" onchange="getElementId(this);">                           
+                                <input class="bg-transparent borderless form-font" id="endDate" type="date" value="" onchange="saveValue(this);">                           
                             </div>
                             <div class="col">
-                                <button type="submit" class="btn btn-warning btn-goplaces text-white form-font" onclick="submitForm(this);">Let's Go Places</button>
+                                <button disabled="disabled" type="submit" class="btn btn-warning btn-goplaces text-white form-font" id="formSubmit" onclick="submitForm(this);">Let's Go Places</button>
                             </div>                      
                     </div>
             </div>
