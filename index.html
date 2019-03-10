@@ -116,7 +116,9 @@
                                 <input class="bg-transparent borderless form-font" id="endDate" type="date" value="" onchange="saveValue(this);">                           
                             </div>
                             <div class="col">
-                                <button disabled="disabled" type="submit" class="btn btn-warning btn-goplaces text-white form-font" id="formSubmit" onclick="submitForm(this);">Let's Go Places</button>
+                                <form action="./places.html">
+                                    <button disabled="disabled" type="submit" class="btn btn-warning btn-goplaces text-white form-font" id="formSubmit" onclick="submitForm(this);">Let's Go Places</button>
+                                </form>
                             </div>                      
                     </div>
             </div>
@@ -158,14 +160,14 @@
                 <div class="modal-header">
                   <form role="form">
                     <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email"/>
-                      <input type="password" class="form-control" placeholder="Password" />
+                      <input type="email" class="form-control" placeholder="Email" id="userEmail" onchange="emailInput(this)"/>
+                      <input type="password" class="form-control" placeholder="Password" id="userPass" onchange="passwordInput()" />
                     </div>
                   </form>
                 </div>
                 <!-- footer -->
                 <div class="modal-footer">
-                  <button class="btn btn-primary btn-block">Log In</button>
+                  <button type="submit" class="btn btn-primary btn-block" id="loginButton" onclick="validateLogin()">Log In</button>
                 </div>
               </div>
             </div>
