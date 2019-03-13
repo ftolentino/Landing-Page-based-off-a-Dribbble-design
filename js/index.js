@@ -43,24 +43,13 @@ function validateForm() {
 	}
 }
 
-function emailInput() {
-	var userInput = document.getElementById('userEmail').value;
-	console.log(userInput);
-	return userInput; 
-}
-
-function passwordInput() {
-	var userInput = document.getElementById('userPass').value;
-	console.log(userInput);
-	return userInput; 
-}
-
 function validateLogin() {
 	var useremail = document.getElementById("userEmail").value;
 	var password = document.getElementById("userPass").value;
 	if (useremail === "admin@gmail.com" && password === "admin") {
 		alert("Login successful");
 		window.location ="" //redirect to another page.
-		return false;
-	}
+	} else {
+    alert("wrong username and password");
+  }
 }
